@@ -1,0 +1,24 @@
+#rcss-previewlink-wrap {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #adabab;
+}
+#frame {
+  border: 0px;
+  pointer-events: none;
+}
+#frame {
+  zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #frame {
+    zoom: 1;
+  }
+}

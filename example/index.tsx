@@ -6,7 +6,7 @@ import { PreviewLink } from '../src';
 const App = () => {
   return (
     <div>
-      <PreviewLink href="https://json-color-palette-generator.vercel.app/" />
+      <PreviewLink href="https://example.com/" />
     </div>
   );
 };

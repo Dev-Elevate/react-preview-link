@@ -1,13 +1,56 @@
-#rcss-previewlink-wrap {
+.rcss-previewlink-anchor-wrap {
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+
+.rcss-previewlink-overlay {
+  border-radius: 2%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.rcss-previewlink-overlay:hover {
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  ); /* Standard syntax */
+  background: -webkit-linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  ); /* Webkit browsers */
+  background: -moz-linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  ); /* Firefox */
+}
+
+.rcss-previewlink-anchor-wrap:hover {
+  transform: scale(1.01);
+  transition: ease-in-out 100ms; /* Increase the size on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rcss-previewlink-anchor-wrap-no-hover-effect:hover {
+  transform: scale(1) !important;
+  transition: none !important; /* Increase the size on hover */
+  box-shadow: none !important;
+}
+
+.rcss-previewlink-wrap {
   padding: 0;
   overflow: hidden;
+  border-radius: 2%;
   border: 1px solid #adabab;
 }
-#frame {
+.rcss-previewlink-frame {
   border: 0px;
   pointer-events: none;
 }
-#frame {
+.rcss-previewlink-frame {
   zoom: 0.25;
   -moz-transform: scale(0.25);
   -moz-transform-origin: 0 0;
@@ -18,7 +61,7 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  #frame {
+  .rcss-previewlink-frame {
     zoom: 1;
   }
 }

@@ -17,6 +17,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
+    "publish": "npm publish --access=public",
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
@@ -33,16 +34,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "preview-link",
+  "name": "@develevate/react-preview-link",
   "author": "Rohit Singh",
-  "module": "dist/preview-link.esm.js",
+  "module": "dist/@develevate/react-preview-link.esm.js",
   "size-limit": [
     {
-      "path": "dist/preview-link.cjs.production.min.js",
+      "path": "dist/@develevate/react-preview-link.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/preview-link.esm.js",
+      "path": "dist/@develevate/react-preview-link.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -59,6 +60,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@dank-style/react": "^0.3.9"
+    "postcss": "^8.4.29",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }

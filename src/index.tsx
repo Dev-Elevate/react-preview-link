@@ -12,6 +12,8 @@ interface IPreviewLink {
   height?: number;
   /** Width of the preview link component | @default 320 */
   width?: number;
+  /** Props the you want to be passed to the underlying anchor tag | @default {} */
+  linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
 }
 
 export function PreviewLink({
@@ -20,6 +22,7 @@ export function PreviewLink({
   href,
   height = 180,
   width = 320,
+  linkProps = {},
   ...props
 }: IPreviewLink & {}) {
   return (

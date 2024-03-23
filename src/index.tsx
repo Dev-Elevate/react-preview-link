@@ -29,6 +29,7 @@ export function PreviewLink({
     <a
       className={`rcss-previewlink-anchor-wrap ${!showHoverAnimation &&
         'rcss-previewlink-anchor-wrap-no-hover-effect'}`}
+      {...linkProps}
       href={href}
     >
       <div
